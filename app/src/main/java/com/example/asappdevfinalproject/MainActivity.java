@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void openActivitySecond() {
-        Intent intent = new Intent(this. ActivitySecond.class);
+        Intent intent = new Intent(this, Second.class);
         startActivity(intent);
     }
 
