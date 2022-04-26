@@ -16,6 +16,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void openActivitySignup() {
+        Intent intent = new Intent(this, signup.class);
+        startActivity(intent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,8 +35,11 @@ public class MainActivity extends AppCompatActivity {
         TextView passwordText = findViewById(R.id.textViewPassword);
         passwordText.setTextColor(Color.BLACK);
 
-        Button button1 = (Button) findViewById(R.id.button);
-        button1.setOnClickListener(view -> openActivitySecond());
+        Button login = (Button) findViewById(R.id.buttonLogin);
+        login.setOnClickListener(view -> openActivitySecond());
+
+        Button signup = (Button) findViewById(R.id.buttonSignup);
+        signup.setOnClickListener(view -> openActivitySignup());
 
     }
 
