@@ -10,10 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ASAppDevFinalProject">
         <activity
-            android:name=".signup"
-            android:exported="true" />
+            android:name=".Homepage"
+            android:exported="true"
+            android:label="@string/title_activity_homepage" />
         <activity
-            android:name=".Second"
+            android:name=".signup"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

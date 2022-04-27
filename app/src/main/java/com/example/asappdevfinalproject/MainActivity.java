@@ -11,8 +11,8 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
 
 
-    public void openActivitySecond() {
-        Intent intent = new Intent(this, Second.class);
+    public void openActivityHomepage() {
+        Intent intent = new Intent(this, Homepage.class);
         startActivity(intent);
     }
 
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         passwordText.setTextColor(Color.BLACK);
 
         Button login = (Button) findViewById(R.id.buttonLogin);
-        login.setOnClickListener(view -> openActivitySecond());
+        login.setOnClickListener(view -> openActivityHomepage());
 
         Button signup = (Button) findViewById(R.id.buttonSignup);
         signup.setOnClickListener(view -> openActivitySignup());
