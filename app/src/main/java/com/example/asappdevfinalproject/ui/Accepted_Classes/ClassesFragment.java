@@ -1,4 +1,4 @@
-package com.example.asappdevfinalproject.ui.dashboard;
+package com.example.asappdevfinalproject.ui.Accepted_Classes;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,23 +12,22 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.asappdevfinalproject.databinding.FragmentDashboardBinding;
+import com.example.asappdevfinalproject.databinding.FragmentClassesBinding;
 
-public class DashboardFragment extends Fragment {
-
-    private DashboardViewModel dashboardViewModel;
-    private FragmentDashboardBinding binding;
+public class ClassesFragment extends Fragment {
+    private ClassesViewModel ClassesViewModel;
+    private FragmentClassesBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        dashboardViewModel =
-                new ViewModelProvider(this).get(DashboardViewModel.class);
+        ClassesViewModel =
+                new ViewModelProvider(this).get(ClassesViewModel.class);
 
-        binding = FragmentDashboardBinding.inflate(inflater, container, false);
+        binding = FragmentClassesBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textDashboard;
-        dashboardViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        final TextView textView = binding.textClasses;
+        ClassesViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
@@ -42,4 +41,5 @@ public class DashboardFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
+
 }

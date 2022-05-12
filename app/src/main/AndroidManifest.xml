@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ASAppDevFinalProject">
         <activity
-            android:name=".Homepage"
+            android:name=".HomeActivity"
             android:exported="true"
             android:label="@string/title_activity_homepage" />
         <activity

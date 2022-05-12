@@ -1,14 +1,14 @@
-package com.example.asappdevfinalproject.ui.for_you;
+package com.example.asappdevfinalproject.ui.Accepted_Classes;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class ForYouViewModel extends ViewModel{
+public class ClassesViewModel extends ViewModel{
 
     private MutableLiveData<String> mText;
 
-    public ForYouViewModel() {
+    public ClassesViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is ForYou fragment");
     }

@@ -12,7 +12,7 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.example.asappdevfinalproject.databinding.ActivityHomepageBinding;
 
-public class Homepage extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity {
 
     private ActivityHomepageBinding binding;
 
@@ -27,7 +27,7 @@ public class Homepage extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications)
+                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications, R.id.navigation_classes)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_homepage);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);

@@ -24,10 +24,10 @@
         tools:layout="@layout/fragment_notifications" />
 
     <fragment
-        android:id="@+id/for_you"
-        android:name="com.example.asappdevfinalproject.ui.for_you.ForYouFragment"
-        android:label="@string/for_you"
-        tools:layout="@layout/fragment_for_you"/>
+        android:id="@+id/navigation_classes"
+        android:name="com.example.asappdevfinalproject.ui.Accepted_Classes.ClassesFragment"
+        android:label="@string/title_classes"
+        tools:layout="@layout/fragment_classes"/>
 
 
 </navigation>
