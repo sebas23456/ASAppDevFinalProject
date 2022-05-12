@@ -24,10 +24,13 @@
         tools:layout="@layout/fragment_notifications" />
 
     <fragment
-        android:id="@+id/navigation_classes"
-        android:name="com.example.asappdevfinalproject.ui.Accepted_Classes.ClassesFragment"
-        android:label="@string/title_classes"
-        tools:layout="@layout/fragment_classes"/>
+        android:id="@+id/navigation_settings"
+        android:name="com.example.asappdevfinalproject.ui.settings.SettingsFragment"
+        android:label="@string/settings"
+        tools:layout="@laout/f"
+        />
+
+
 
 
 </navigation>

@@ -4,5 +4,9 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
-    <string name="title_classes">Accepted Classes</string>
+    <string name="for_you">For You</string>
+    <string name="settings">Settings</string>
+
+
+
 </resources>
