@@ -9,7 +9,6 @@
     android:gravity="center"
     >
 
-
     <TextView
         android:id="@+id/textViewTitle"
         android:layout_width="match_parent"
@@ -76,14 +75,6 @@
         tools:layout_editor_absoluteY="569dp"
         tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/buttonSignup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sign up:"
-        tools:layout_editor_absoluteX="219dp"
-        tools:layout_editor_absoluteY="569dp"
-        tools:ignore="MissingConstraints" />
 
     </LinearLayout>
 </LinearLayout>
