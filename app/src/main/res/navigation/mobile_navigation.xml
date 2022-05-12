@@ -24,10 +24,13 @@
         tools:layout="@layout/fragment_notifications" />
 
     <fragment
-        android:id="@+id/for_you"
-        android:name="com.example.asappdevfinalproject.ui.for_you.ForYouFragment"
-        android:label="@string/for_you"
-        tools:layout="@layout/fragment_for_you"/>
+        android:id="@+id/navigation_settings"
+        android:name="com.example.asappdevfinalproject.ui.settings.SettingsFragment"
+        android:label="@string/settings"
+        tools:layout="@laout/f"
+        />
+
+
 
 
 </navigation>
