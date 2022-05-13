@@ -16,31 +16,24 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        TextView username = findViewById(R.id.textViewUsername);
-        TextView pass = findViewById(R.id.textViewPassword);
+        TextView username = findViewById(R.id.UsernameEntry);
+        TextView pass = findViewById(R.id.PasswordEntry);
 
         Button login = (Button) findViewById(R.id.buttonLogin);
         login.setOnClickListener(v -> {
             db = new LoginHelper(MainActivity.this);
             String u = username.getText().toString();
             String p = pass.getText().toString();
-            if (db.check(u,p) != null){
+            String id = db.check(u,p);
+            if (id != null){
              openActivityHomepage();
-             finish();
             } else {
-                Toast.makeText(MainActivity.this, "The credentials you have entered are incorrect",
-                        Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "The credentials you have entered are incorrect", Toast.LENGTH_SHORT).show();
             }
-
         });
     }
-
-
-
 }
