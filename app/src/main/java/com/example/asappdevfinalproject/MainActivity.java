@@ -9,7 +9,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private LoginBase db;
+    private LoginHelper db;
 
     public void openActivityHomepage() {
         Intent intent = new Intent(this, HomeActivity.class);
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button login = (Button) findViewById(R.id.buttonLogin);
         login.setOnClickListener(v -> {
-            db = new LoginBase(MainActivity.this);
+            db = new LoginHelper(MainActivity.this);
             String u = username.getText().toString();
             String p = pass.getText().toString();
             if (db.check(u,p) != null){
