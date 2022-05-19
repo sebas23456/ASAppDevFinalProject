@@ -20,8 +20,9 @@ public class LoginHelper extends SQLiteAssetHelper {
         SQLiteDatabase db = this.getReadableDatabase();
         username = "'" + username + "'";
         password = "'" + password + "'";
-        Cursor cursor = db.rawQuery("SELECT " + COLUMN_EMAIL + " FROM " + LOGIN_TABLE + " WHERE "
+        Cursor cursor = db.rawQuery("SELECT " + COLUMN_PASSWORD + "," + COLUMN_USERNAME + " FROM " + LOGIN_TABLE + " WHERE "
                 + COLUMN_USERNAME + " = " + username + " AND " + COLUMN_PASSWORD + " = " + password + ";", null);
+
         if(cursor.moveToFirst()){
             return cursor.getString(0);
         }
