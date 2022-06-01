@@ -9,11 +9,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ASAppDevFinalProject" >
         <activity
-            android:name=".activity_favorites"
-            android:exported="false"
-            android:label="@string/title_activity_favorites"
-            android:theme="@style/Theme.ASAppDevFinalProject.NoActionBar" />
-        <activity
             android:name=".HomeActivity"
             android:exported="true"
             android:label="@string/title_activity_homepage" />

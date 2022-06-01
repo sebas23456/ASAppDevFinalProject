@@ -29,8 +29,11 @@
         android:label="@string/settings"
         tools:layout="@layout/fragment_settings"
         />
-
-
+    <fragment
+        android:id="@+id/navigation_favorites"
+        android:name="com.example.asappdevfinalproject.ui.favorites.FavoritesFragment"
+        android:label="fragment_favorites"
+        tools:layout="@layout/fragment_favorites" />
 
 
 </navigation>
