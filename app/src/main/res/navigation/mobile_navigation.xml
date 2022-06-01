@@ -32,7 +32,7 @@
     <fragment
         android:id="@+id/navigation_favorites"
         android:name="com.example.asappdevfinalproject.ui.favorites.FavoritesFragment"
-        android:label="fragment_favorites"
+        android:label="@string/favorites"
         tools:layout="@layout/fragment_favorites" />
 
 
