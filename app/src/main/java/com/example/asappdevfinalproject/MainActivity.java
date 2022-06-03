@@ -23,8 +23,12 @@ public class MainActivity extends AppCompatActivity {
         TextView username = findViewById(R.id.UsernameEntry);
         TextView pass = findViewById(R.id.PasswordEntry);
         Button login = findViewById(R.id.buttonLogin);
+        db = new LoginHelper(MainActivity.this);
+        if (db.CHECK_CURRENT() != null){
+            openActivityHomepage();
+        }
+
         login.setOnClickListener(v -> {
-            db = new LoginHelper(MainActivity.this);
             String u = username.getText().toString();
             String p = pass.getText().toString();
             String id = db.check(u,p);
