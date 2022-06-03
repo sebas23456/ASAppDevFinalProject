@@ -16,5 +16,16 @@
         android:icon="@drawable/ic_notifications_black_24dp"
         android:title="@string/title_notifications" />
 
+    <item
+        android:id="@+id/navigation_favorites"
+        android:icon="@drawable/ic_baseline_favorite_24"
+        android:title="@string/favorites"
+        />
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/ic_settings_black_24"
+        android:title="@string/settings" />
+
 
 </menu>
