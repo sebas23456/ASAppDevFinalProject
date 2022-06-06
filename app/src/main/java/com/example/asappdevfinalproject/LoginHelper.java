@@ -19,6 +19,7 @@ public class LoginHelper extends SQLiteAssetHelper {
         super(context, "CourseGuide.db", null, 1);
     }
 
+
     public String check(String username, String password) {
         SQLiteDatabase db = this.getReadableDatabase();
         username = "'" + username + "'";
@@ -48,8 +49,8 @@ public class LoginHelper extends SQLiteAssetHelper {
 
     public void SET_CURRENT(String username) {
         String time = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new java.util.Date());
-        SQLiteDatabase db = this.getReadableDatabase();
-        db.rawQuery("UPDATE " + LOGIN_TABLE + " SET " + LOGIN_TIME + " = " + time + "" + " WHERE " + COLUMN_USERNAME + " = " + username + ";", null);
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.rawQuery("UPDATE " + LOGIN_TABLE + " SET " + LOGIN_TIME + " = " +  "\"" + time + "\"" + " WHERE " + COLUMN_USERNAME + " = " + username, null);
     }
 
     public String CHECK_CURRENT() {
