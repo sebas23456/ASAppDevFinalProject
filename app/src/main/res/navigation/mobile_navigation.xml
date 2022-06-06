@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@id/navigation_home">
+
 
     <fragment
         android:id="@+id/navigation_home"
@@ -24,16 +25,15 @@
         tools:layout="@layout/fragment_notifications" />
 
     <fragment
-        android:id="@+id/navigation_settings"
-        android:name="com.example.asappdevfinalproject.ui.settings.SettingsFragment"
-        android:label="@string/settings"
-        tools:layout="@layout/fragment_settings"
-        />
-    <fragment
         android:id="@+id/navigation_favorites"
         android:name="com.example.asappdevfinalproject.ui.favorites.FavoritesFragment"
         android:label="@string/favorites"
         tools:layout="@layout/fragment_favorites" />
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.example.asappdevfinalproject.ui.settings.SettingsFragment"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_settings" />
 
 
 </navigation>

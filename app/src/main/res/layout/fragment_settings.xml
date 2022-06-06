@@ -10,7 +10,7 @@
         android:id="@+id/text_settings"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="This is the settings xml text box"
+        android:text="This is the xml settings text box"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
