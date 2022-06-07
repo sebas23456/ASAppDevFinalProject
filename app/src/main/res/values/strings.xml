@@ -2,14 +2,13 @@
     <string name="app_name">ASAppDevFinalProject</string>
     <string name="title_activity_homepage">Homepage</string>
 
-    <string name="title_home">Home</string>
+    <string name="title_classes">Classes</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
-    <string name="favorites">Favorites</string>
+    <string name="favorites">Selected Classes</string>
     <string name="settings">Settings</string>
 
 
-    <string name="for_you">For You</string>
 
     <string name="title_activity_favorites">activity_favorites</string>
     <string name="homepage">The Main Page</string>

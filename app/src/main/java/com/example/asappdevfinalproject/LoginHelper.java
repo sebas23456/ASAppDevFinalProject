@@ -21,25 +21,26 @@ public class LoginHelper extends SQLiteAssetHelper {
 
 
     public String check(String username, String password) {
-        SQLiteDatabase db = this.getReadableDatabase();
-        username = "'" + username + "'";
-        password = "'" + password + "'";
-        Cursor pass_check = db.rawQuery("SELECT " + COLUMN_PASSWORD + " FROM " + LOGIN_TABLE + " WHERE "
-                + COLUMN_USERNAME + " = " + username + " AND " + COLUMN_PASSWORD + " = " + password + ";", null);
-        if (pass_check.moveToFirst()) {
-            String act_pass = pass_check.getString(0);
-            if (password.equals(act_pass)) {
-                SET_CURRENT(username);
-                return act_pass;
-            }
-        }
-        Cursor temp_pass = db.rawQuery("SELECT " + STUDENT_ID + " FROM " + LOGIN_TABLE + " WHERE "
-                + COLUMN_USERNAME + " = " + username + " AND " + STUDENT_ID + " = " + password + ";", null);
-        if (temp_pass.moveToFirst()) {
-            SET_CURRENT(username);
-            return "PASS_NEEDS_SET";
-        }
-        return null;
+//        SQLiteDatabase db = this.getReadableDatabase();
+//        username = "'" + username + "'";
+//        password = "'" + password + "'";
+//        Cursor pass_check = db.rawQuery("SELECT " + COLUMN_PASSWORD + " FROM " + LOGIN_TABLE + " WHERE "
+//                + COLUMN_USERNAME + " = " + username + " AND " + COLUMN_PASSWORD + " = " + password + ";", null);
+//        if (pass_check.moveToFirst()) {
+//            String act_pass = pass_check.getString(0);
+//            if (password.equals(act_pass)) {
+//                SET_CURRENT(username);
+//                return act_pass;
+//            }
+//        }
+//        Cursor temp_pass = db.rawQuery("SELECT " + STUDENT_ID + " FROM " + LOGIN_TABLE + " WHERE "
+//                + COLUMN_USERNAME + " = " + username + " AND " + STUDENT_ID + " = " + password + ";", null);
+//        if (temp_pass.moveToFirst()) {
+//            SET_CURRENT(username);
+//            return "PASS_NEEDS_SET";
+//        }
+        return "hello";
+//        return null;
     }
 
     public void SET_PASSWORD(String username, String password) {
