@@ -7,7 +7,10 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.Toast;
 
+import com.example.asappdevfinalproject.MainActivity;
 import com.example.asappdevfinalproject.R;
 
 /**
@@ -16,6 +19,8 @@ import com.example.asappdevfinalproject.R;
  * create an instance of this fragment.
  */
 public class SettingsFragment extends Fragment {
+
+
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -51,10 +56,23 @@ public class SettingsFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+//        Button changePassword = (Button) getView().findViewById(R.id.pass_button);
+//        changePassword.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View v) {
+////                Toast.makeText(getActivity(),"You have changed your password!",Toast.LENGTH_SHORT).show();
+//            }
+//        });
+
+
+
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+    }
+
+    private void setContentView(int fragment_settings) {
     }
 
     @Override
@@ -63,4 +81,7 @@ public class SettingsFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_settings, container, false);
     }
+
+
+
 }
