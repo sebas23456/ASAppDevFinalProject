@@ -16,7 +16,6 @@ import com.example.asappdevfinalproject.R;
  * create an instance of this fragment.
  */
 public class NotificationsFragment extends Fragment {
-
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -29,7 +28,6 @@ public class NotificationsFragment extends Fragment {
     public NotificationsFragment() {
         // Required empty public constructor
     }
-
     /**
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.

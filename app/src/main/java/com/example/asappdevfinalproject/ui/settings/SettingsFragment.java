@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.asappdevfinalproject.MainActivity;
@@ -19,9 +20,6 @@ import com.example.asappdevfinalproject.R;
  * create an instance of this fragment.
  */
 public class SettingsFragment extends Fragment {
-
-
-
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -34,7 +32,6 @@ public class SettingsFragment extends Fragment {
     public SettingsFragment() {
         // Required empty public constructor
     }
-
     /**
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
@@ -56,14 +53,14 @@ public class SettingsFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-//        Button changePassword = (Button) getView().findViewById(R.id.pass_button);
-//        changePassword.setOnClickListener(new View.OnClickListener() {
-//            public void onClick(View v) {
-////                Toast.makeText(getActivity(),"You have changed your password!",Toast.LENGTH_SHORT).show();
-//            }
-//        });
-
+        Button changePassword = (Button) getView().findViewById(R.id.pass_button);
+        changePassword.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Toast.makeText(getActivity(),"You have changed your password!",Toast.LENGTH_SHORT).show();
+                TextView notif = (TextView) getView().findViewById(R.id.text_notifications);
+                notif.setText("Your password was changed");
+           }
+       });
 
 
         if (getArguments() != null) {
