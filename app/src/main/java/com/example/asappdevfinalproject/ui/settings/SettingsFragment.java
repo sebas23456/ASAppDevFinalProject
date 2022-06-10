@@ -13,17 +13,19 @@ import android.widget.Toast;
 
 import com.example.asappdevfinalproject.MainActivity;
 import com.example.asappdevfinalproject.R;
+import com.example.asappdevfinalproject.ui.notifications.NotificationsFragment;
 
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link SettingsFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class SettingsFragment extends Fragment {
+public class SettingsFragment extends Fragment implements View.OnClickListener {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    View view;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -53,15 +55,6 @@ public class SettingsFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Button changePassword = (Button) getView().findViewById(R.id.pass_button);
-        changePassword.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Toast.makeText(getActivity(),"You have changed your password!",Toast.LENGTH_SHORT).show();
-                TextView notif = (TextView) getView().findViewById(R.id.text_notifications);
-                notif.setText("Your password was changed");
-           }
-       });
-
 
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
@@ -76,9 +69,16 @@ public class SettingsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_settings, container, false);
+
+    view = inflater.inflate(R.layout.fragment_settings, container, false);
+    Button changePassword = view.findViewById(R.id.pass_button);
+    changePassword.setOnClickListener(this);
+        return view;
     }
 
 
-
-}
+    @Override
+    public void onClick(View v) {
+            Toast.makeText(getActivity(),"You have changed your password!",Toast.LENGTH_SHORT).show();
+        }
+    }
