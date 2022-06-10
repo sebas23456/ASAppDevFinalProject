@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment">
+    tools:context=".ui.home.HomeFragment"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/text_home"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="This is the xml home text box"
+        android:text="This is the class that are available to you:"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -21,4 +22,79 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/text_home2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EEN44 – WORLD LITERATURE(5 periods per week for 1 year – Open Enrollment course)"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_home3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EEN44X – ADVANCED PLACEMENT ENGLISH LITERATURE: TRADITIONS
+(5 periods per week for 1 year-Qualified Entry Course- 92% on most recent term of English; 90% in all prior terms
+of English required)"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_home4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HFN11XU – ADVANCED PLACEMENT UNITED STATES GOVERNMENT AND POLITICS WITH ECONOMICS
+(5 periods per week for 1 year - Qualified Entry required)
+(May also be taken as a 5th or 6th major – HFN11XU5/HFN21XU6)"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/text_home5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MCN11XB - ADVANCED PLACEMENT MATHEMATICS - CALCULUS BC(5 periods per week for one year – Qualified Entry required)"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/text_home6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MKN11X - ADVANCED PLACEMENT COMPUTER SCIENCE A (JAVA)
+(5 periods per week for one year – Qualified Entry required)"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/text_home7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MQN11CA – LINEAR ALGEBRA AND DIFFERENTIAL EQUATIONS(5 periods per week for one year – Qualified Entry required)"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_home8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MKS22CA – APP DEVELOPMENT
+(5 periods per week for one year)"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/text_home9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SPN11X1 - AP PHYSICS 1(10 periods per week for 1 year; Qualified Entry required; taken instead of Regents Physics.)"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/text_home10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UHN21 – INTRODUCTION TO MUSIC (5 periods per week for 1 year - May be a 5th or additional class, Open enrollment class)"
+        tools:ignore="MissingConstraints" />
+
+
+</LinearLayout>

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.favorites.FavoritesFragment">
+    tools:context=".ui.favorites.FavoritesFragment"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/text_favorites"
@@ -21,4 +22,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/text_favorites1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MCN11XB - ADVANCED PLACEMENT MATHEMATICS - CALCULUS BC(5 periods per week for one year – Qualified Entry required)"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/favorites2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MKN11X - ADVANCED PLACEMENT COMPUTER SCIENCE A (JAVA)
+(5 periods per week for one year – Qualified Entry required)"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/favorites3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UHN21 – INTRODUCTION TO MUSIC (5 periods per week for 1 year - May be a 5th or additional class, Open enrollment class)"
+        tools:ignore="MissingConstraints" />
+
+
+</LinearLayout>
